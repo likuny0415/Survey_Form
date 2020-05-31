@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body {
+			font-family: sans-serif;
+			text-align: center;
+		}
+		label {
+			font-size: 18px;
+			display: block;
+			padding-bottom: 10px;
+		}
+
+	</style>
+	
+</head>
+<body>
+	<h1 id="title">Which kind of sports do you favor?</h1>
+
+	<p id="description">This is a survey where you can tell us your favourate sports. </p>
+
+	<form id="survey-form">
+		<label id="name-label"> Name: </label>
+		<input type="text" name="name" id="name" required placeholder="Name">
+
+		<br>
+
+		<label id="email-label">Email:</label> 
+		<input type="email" name="email" id="email" required placeholder="Email">
+
+		<br>
+
+		<label id="number-label">Number:</label> 
+		<input type="number" name="number" min="0" max="10
+		" id="number" placeholder="Number" required="">
+		<br>
+
+		<input type="submit">
+		<br>
+		<select id="dropdown" name="sports">
+			<option value="football">Football</option>
+			<option value="basketball">Basketball</option>
+			<option value="tennis"> Tennis</option>
+			<option value="other"> Other</option>
+		</select>
+         <br>
+		<input type="radio" name="gender" value="male">Male<br>
+		<input type="radio" name="gender" value="female">Female<br>
+		<input type="radio" name="gender" value="other">Other<br>
+
+		<input type="checkbox" name="Machine" value="I have a ball">Ball<br>
+		<input type="checkbox" name="Machine" value="I have a swimming pool">Swimming pool<br>
+		<input type="checkbox" name="Machine" value="I have a yard">Yard<br>
+		<input type="checkbox" name="Machine" value="I have a house">House<br>
+
+		<textarea>Additional information</textarea>
+		<input type="submit" id="submit">
+	</form>
+</body>
+</html>
